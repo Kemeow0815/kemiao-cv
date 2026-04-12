@@ -44,6 +44,12 @@ export default defineNuxtConfig({
 	},
 
 	vite: {
+		optimizeDeps: {
+			include: [
+				'@vue/devtools-core',
+				'@vue/devtools-kit',
+			],
+		},
 		server: {
 			// 预先允许从其他域名访问开发环境，但 --host 才会在所有网络接口上启动监听
 			allowedHosts: true,
