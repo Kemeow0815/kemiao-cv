@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const publicConfig = useRuntimeConfig().public
 
-const name = publicConfig.name || '**璐'
-const phone = publicConfig.phone || '133****9192'
+const name = publicConfig.name || '毛晨煜'
+const phone = publicConfig.phone || '13812825339'
 
 useSeoMeta({
-	title: `${name} - 前端开发实习`,
-	description: `${name}的前端开发实习简历`,
+	title: `${name} - 自动化实习`,
+	description: `${name}的自动化简历`,
 	robots: 'noindex, nofollow',
 })
 </script>
@@ -30,51 +30,44 @@ useSeoMeta({
 		</InfoLi>
 
 		<InfoLi icon="ri:mail-line" label="邮箱">
-			<InfoLink to="mailto:hi@zhilu.cyou" />
+			<InfoLink to="mailto:yxkswa@163.com" />
 		</InfoLi>
 
-		<InfoLi icon="ri:github-line" label="GitHub">
+		<!-- <InfoLi icon="ri:github-line" label="GitHub">
 			<InfoLink to="https://github.com/L33Z22L11">
 				L33Z22L11
 			</InfoLink>
-		</InfoLi>
+		</InfoLi> -->
 
 		<InfoLi icon="ri:men-line" label="性别">
 			男
 		</InfoLi>
 
 		<InfoLi icon="ri:school-line" label="学校">
-			西安邮电大学 (计算机科学与技术)
+			南京工业职业技术大学 (自动化技术与应用)
 		</InfoLi>
 
 		<InfoLi icon="ri:graduation-cap-line" label="学历">
-			本科在读 (2026 届)
+			本科在读 (2027 届)
 		</InfoLi>
 	</ul>
 
-	<InfoSection title="个人技能">
+	<InfoSection title="主修课程">
 		<ul>
-			<li>掌握 Vue 3、Nuxt 4、TypeScript，熟练掌握响应式设计、UI/UX 优化</li>
-			<li>具备敏锐的用户需求感知能力，关注用户体验与可访问性</li>
-			<li>善于运用 AI 工具提升开发效能，注重代码质量与兼容性实践</li>
+			<li>自动控制原理、PLC 编程、单片机原理、电气控制与变频技术、传感器与检测技术、工业机器人基础、EPLAN 电气制图、组态技术、电机与拖动、过程控制系统</li>
 		</ul>
 	</InfoSection>
 
-	<InfoSection title="实习经历">
-		<Project
-			name="字节跳动"
-			desc="中国商业产品与技术-巨量引擎竞价广告投放平台-前端开发"
-			from="2025.05"
-		>
-			<ul>
-				<li>“简单投”页面实现说明文案动态展示/配置能力，发现并解决投放平台十余处用户体验问题</li>
-				<li>发起静态资源治理专项，发现图文列表加载性能问题，制定报警规则多次回归线上资源问题</li>
-				<li>内网技术社区文章登日榜周榜，主讲AD技术圆桌会、商业化欢乐Talk各一期</li>
-			</ul>
-		</Project>
+	<InfoSection title="个人技能">
+		<ul>
+			<li>编程控制：西门子、PLC 编程；掌握单片机 C语言基础</li>
+			<li>软件操作：会使用EPALN 绘制电气原理图、组态昆仑通态触摸屏组态、Office 办公套件</li>
+			<li>硬件实操：理解低压电气接线、变频器、伺服电机、传感器安装调试、配电柜基础装配</li>
+			<li>专业能力：初步了解自动化生产线流程、设备故障排查、简单工控系统调试、识图与图纸解读</li>
+		</ul>
 	</InfoSection>
 
-	<InfoSection title="项目经验">
+	<!-- <InfoSection title="项目经验">
 		<Project
 			name="blog-v3"
 			desc="个人博客"
@@ -106,12 +99,25 @@ useSeoMeta({
 				<li>优化图标显示，针对 Windows 托盘图标、macOS 启动台图标比例异常问题，参考 Electron、Apple Developer 等文档规范，使用原型设计工具绘制图标并调整逻辑，实现多系统、多颜色模式下托盘、桌面图标完美显示。</li>
 			</ul>
 		</Project>
+	</InfoSection> -->
+
+	<InfoSection title="校园经历">
+		<ul>
+			<li>专业实训：参与自动化生产线组装与调试实训，负责电气接线、PLC 程序编写及设备联调，参与完成流水线启停、分拣控制功能</li>
+			<li>课程设计：参与完成基于PLC的加料搅拌系统设计，参与完成方案设计、编程、接线及调试</li>
+		</ul>
+	</InfoSection>
+
+	<InfoSection title="实习经历">
+		<ul>
+			<li>暂无实习经历</li>
+		</ul>
 	</InfoSection>
 
 	<InfoSection title="个人证书">
 		<ul>
-			<li>CET-4、CET-6</li>
-			<li>中国大学生计算机设计大赛西北赛区二等奖</li>
+			<li>英语四六级</li>
+			<li>中国大学生计算机二级</li>
 		</ul>
 	</InfoSection>
 </article>
