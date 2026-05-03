@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const publicConfig = useRuntimeConfig().public
 
-const name = publicConfig.name || '毛晨煜'
-const phone = publicConfig.phone || '13812825339'
+const name = publicConfig.name || '123'
+const phone = publicConfig.phone || '21235339'
 
 useSeoMeta({
 	title: `${name} - 自动化实习`,

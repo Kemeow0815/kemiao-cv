@@ -32,7 +32,7 @@ export default defineNuxtConfig({
 
 	routeRules: {
 		// 网站图标
-		'/favicon.ico': { redirect: 'https://wsrv.nl/?url=github.com/L33Z22L11.png%3fsize=96&mask=circle' },
+		'/favicon.ico': { redirect: 'https://wsrv.nl/?url=github.com/kemeow0815.png%3fsize=96&mask=circle' },
 	},
 
 	runtimeConfig: {
