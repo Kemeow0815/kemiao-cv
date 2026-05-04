@@ -3,6 +3,7 @@ const publicConfig = useRuntimeConfig().public
 
 const name = publicConfig.name || '123'
 const phone = publicConfig.phone || '21235339'
+const avatarUrl = '/avatar.jpg'
 
 useSeoMeta({
 	title: `${name} - 自动化实习`,
@@ -20,9 +21,10 @@ useSeoMeta({
 	tracking="wide"
 	rounded="xl print:0"
 >
-	<h1 text="center" m="be-4">
-		{{ name }}
-	</h1>
+	<div class="flex items-center justify-center gap-4" style="margin-bottom: 1rem;">
+		<img :src="avatarUrl" alt="头像" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;" />
+		<h1 style="font-size: 1.5rem; letter-spacing: 0.1em;">{{ name }}</h1>
+	</div>
 
 	<ul columns="sm:2" p="is-0">
 		<InfoLi icon="ri:smartphone-line" label="电话">
@@ -30,7 +32,11 @@ useSeoMeta({
 		</InfoLi>
 
 		<InfoLi icon="ri:mail-line" label="邮箱">
-			<InfoLink to="mailto:yxkswa@163.com" />
+			<InfoLink to="mailto:maochenyu815@163.com" />
+		</InfoLi>
+
+		<InfoLi icon="lucide:house" label="居住地">
+			江苏省苏州市常熟市
 		</InfoLi>
 
 		<!-- <InfoLi icon="ri:github-line" label="GitHub">
@@ -48,7 +54,11 @@ useSeoMeta({
 		</InfoLi>
 
 		<InfoLi icon="ri:graduation-cap-line" label="学历">
-			本科在读 (2027 届)
+			本科在读 (2023-2027)
+		</InfoLi>
+
+		<InfoLi icon="material-symbols:work" label="求职意向">
+			自动化工程师、电气技术员、设备调试工程师、工控助理工程师等
 		</InfoLi>
 	</ul>
 
@@ -105,6 +115,15 @@ useSeoMeta({
 		<ul>
 			<li>专业实训：参与自动化生产线组装与调试实训，负责电气接线、PLC 程序编写及设备联调，参与完成流水线启停、分拣控制功能</li>
 			<li>课程设计：参与完成基于PLC的加料搅拌系统设计，参与完成方案设计、编程、接线及调试</li>
+		</ul>
+	</InfoSection>
+
+	<InfoSection title="自我评价">
+		<ul>
+			<li>学习能力强，对自动化技术充满热情，乐于接受新挑战</li>
+			<li>工作认真负责，具备良好的团队协作精神和沟通能力</li>
+			<li>有一定的动手实践能力，能够参与完成电气接线和设备调试工作</li>
+			<li>具备自动化专业知识基础，理解PLC编程和工业控制原理</li>
 		</ul>
 	</InfoSection>
 
